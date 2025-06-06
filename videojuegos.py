@@ -53,6 +53,9 @@ while True:
           if len(videosjuegos) == 0:
              print("No hay videojuegos registrados.")
           else:
-             print
+             print("\n--- LISTA DE VIDEOJUEGOS---")
+             for v in videosjuegos:
+                print(f"codigo: {v["codigo"]}, nombre:{v["nombre"]}, Género:{v["genero"]},plataforma:{v["plataforma"]}")
+                
           
     
