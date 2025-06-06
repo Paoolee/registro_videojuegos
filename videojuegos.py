@@ -56,6 +56,34 @@ while True:
              print("\n--- LISTA DE VIDEOJUEGOS---")
              for v in videosjuegos:
                 print(f"codigo: {v["codigo"]}, nombre:{v["nombre"]}, Género:{v["genero"]},plataforma:{v["plataforma"]}")
+       elif opcion == "3":
+          codigo = int(input("Ingrese el codigo del videojuego a modificar:"))
+          encontrado = False
+          for v in videosjuegos:
+             if v ["codigo"]== codigo:
+                v ["nombre"]= input("nuevo nombre:")
+                v ["genero"]= input("uevo genero:")
+
+                print("\nplataformas disponibles:")
+                print("1.PC")
+                print("2.PSS")
+                print("3.xbox series X")
+                print("4.nintendo switch")
+                plataformas_codigo = int(input("Seleccione el número de la nueva plataforma:"))
+                v ["plataforma"] = plataformas[plataformas_codigo -1]
+
+                print("Videosjuego modificado correctamente.")
+                encontrado = True
+                break
+             if not encontrado:
+                print("Videojuego no enconytrado.")
                 
+                
+
+             
+
           
+
+            
+                
     
