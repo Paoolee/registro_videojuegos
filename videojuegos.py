@@ -31,7 +31,7 @@ while True:
           nombre = int(input("Ingrese el nombe del videojuego"))
           genero = input("Ingrese el genero del videojuego:") 
 
-          print("\nplataformas disponiles":)
+          print("\nplataformas disponiles")
           print("1.PC")
           print("2. PSS") 
           print("3. xbox series X") 
@@ -42,11 +42,17 @@ while True:
           videosjuegos = {
              "codigo": codigo,
              "nombre": nombre,
+             "genero": genero,
              "plataforma": plataforma
           }
 
           videosjuegos.append(videosjuegos)
           print("Videojuego registrado correcatmente")
-          
 
+       elif opcion == "2":
+          if len(videosjuegos) == 0:
+             print("No hay videojuegos registrados.")
+          else:
+             print
+          
     
