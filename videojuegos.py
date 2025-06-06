@@ -25,6 +25,28 @@ while True:
        break
     else:
        print("Opción invalida")
-           
+
+       if opcion == "1":
+          codigo = int(input("Ingrese el código del videojuego:"))
+          nombre = int(input("Ingrese el nombe del videojuego"))
+          genero = input("Ingrese el genero del videojuego:") 
+
+          print("\nplataformas disponiles":)
+          print("1.PC")
+          print("2. PSS") 
+          print("3. xbox series X") 
+          print("4.Nintendo Switch")
+
+          plataformas_codigo = int(input("Seleccione el núnero de la plataforma:"))
+          plataforma = plataforma[plataformas_codigo -1]
+          videosjuegos = {
+             "codigo": codigo,
+             "nombre": nombre,
+             "plataforma": plataforma
+          }
+
+          videosjuegos.append(videosjuegos)
+          print("Videojuego registrado correcatmente")
+          
 
     
