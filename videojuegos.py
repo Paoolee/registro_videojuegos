@@ -1,6 +1,6 @@
 videosjuegos = []
 
-plataformas = ("PC", "PSS","xbox series X","Nintendo Switch")
+plataformas = ("PC", "PS5","xbox series X","Nintendo Switch")
 
 while True:
     print("\n-- MENÚ DE VIDEOJUEGOS---")
